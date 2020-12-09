@@ -17,6 +17,8 @@ namespace AnimalForm
         public Form1()
         {
             InitializeComponent();
+
+            Console.SetConsole(rtbConsole);
             
             Animal.SetYear(2019); // Så här anropar man en klassmetod, 
             // dvs en statisk metod. 
@@ -39,6 +41,16 @@ namespace AnimalForm
 
             kurre.IntroduceYourself();
             vilma.IntroduceYourself();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

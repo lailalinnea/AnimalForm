@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalForm
 {
-    class Bird
+    class Bird : Animal
     {
         public Bird(string name, int age) : base()
         {
